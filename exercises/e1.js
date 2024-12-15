@@ -3,9 +3,14 @@
 // Return an array of numbers in 1..10
 // getFirstTenNumbers() => [1, 2, 3, ... , 10]
 
-export function getFirstTenNumbers() {
-  // Your code goes here...
+import { isFirstRun } from "vitest";
 
+export function getFirstTenNumbers() {
+  let firstTenNumbers = []
+  for (let i = 0; i < 10; i++) {
+    firstTenNumbers[i] = i + 1;
+  }
+  return firstTenNumbers
 }
 
 // === TEST YOURSELF ===
